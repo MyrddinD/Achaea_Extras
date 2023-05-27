@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE MudletPackage>
+<MudletPackage version="1.001">
+	<AliasPackage>
+		<AliasGroup isActive="yes" isFolder="yes">
+			<name>Ship Stuff</name>
+			<script></script>
+			<command></command>
+			<packageName></packageName>
+			<regex></regex>
+			<AliasGroup isActive="yes" isFolder="yes">
+				<name>General Sailing</name>
+				<script></script>
+				<command></command>
+				<packageName></packageName>
+				<regex></regex>
+				<Alias isActive="yes" isFolder="no">
+					<name>Board TSAS</name>
+					<script>send ("BOARD SHIP TSAS")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^board$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Lower Anchor</name>
+					<script>send ("SAY Lower Anchor")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^anchord$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Raise Anchor</name>
+					<script>send ("SAY Raise Anchor")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^anchoru$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Cast Off</name>
+					<script>send ("SAY Cast Off")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^castoff$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Change Direction</name>
+					<script>Direction = matches[2]
+
+send ("say Bring Her To "..Direction)</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^c (\w+)$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Command Screen Lower</name>
+					<script>send ("SHIP COMSCREEN LOWER")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^commd$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Command Screen Raise</name>
+					<script>send ("SHIP COMMSCREEN RAISE")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^commu$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Docking</name>
+					<script>dockd = matches[2]
+
+send ("SHIP DOCK "..dockd.." CONFIRM")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^dock (\w+)$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Disengage</name>
+					<script>send ("SHIP DISENGAGE")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^dship$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Evasive Manoeuvers</name>
+					<script>send ("SHIP MANOEUVRE EVASIVE")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^evasive$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Full Sails</name>
+					<script>send ("Say Full Sails")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sailsf$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Reef The Sails</name>
+					<script>send ("SAY REEF THE SAILS")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sailsreef$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Strike The Sails</name>
+					<script>send ("SAY Strike the Sails")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sailsstrike$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Steady Going Manoeuvre</name>
+					<script>send ("SHIP MANOEUVRE STEADYGOING")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^going$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Hull Repair</name>
+					<script>send ("SHIP REPAIR HULL")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^hull$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Invoke Sea Spirit</name>
+					<script>send ("INVOKE SEA SPIRIT")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^isp$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Lower Ladders</name>
+					<script>send ("SHIP LOWER LADDERS")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^lowerl$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Maps</name>
+					<script>send ("SHIP MAP LIST")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^maps$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Mast</name>
+					<script>send ("CLIMB MAST")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^mast$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Raise Ladders</name>
+					<script>send ("SHIP RAISE LADDERS")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^raisel$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Raise Plank</name>
+					<script>send ("SHIP RAISE PLANK")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^raisep$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Repair All</name>
+					<script>send ("SHIP REPAIR ALL")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^rall$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Row</name>
+					<script>send ("SHIP ROW")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^row$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Sail Repair</name>
+					<script>send ("SHIP RAPIR SAILS")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sail$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Set Sail %</name>
+					<script>sailp = matches[2]
+
+send ("SHIP SAILS SET "..sailp.."%")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sails (\d+)$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Bearings</name>
+					<script>bearings = matches[2]
+
+send ("SHIP BEARINGS "..bearings)</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sb (\.+)$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Barrier</name>
+					<script>send ("INVOKE BARRIER")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sbarrier$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Cloak</name>
+					<script>send ("INVOKE CLOAK")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^scloak$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Scan Normal</name>
+					<script>send ("SHIPSCAN NORMAL")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^scn$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Rainstorm</name>
+					<script>send ("INVOKE RAINSTORM")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^srain$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Shield</name>
+					<script>send ("INVOKE SHIELD")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sshield$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Smart Orders</name>
+					<script>send ("SHIP SMARTORDERS")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^ssmart$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship All Stop</name>
+					<script>send ("SAY ALL STOP")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sstop$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Warning Off</name>
+					<script>send ("SHIPWARNING OFF")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^stopwarn$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Stop Barrier</name>
+					<script>send ("DISSOLVE BARRIER")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^stopbarrier$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Stop Cloak</name>
+					<script>send ("DISSOLVE CLOAK")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^stopcloak$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Warning On</name>
+					<script>send ("SHIPWARNING ON")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^swarn$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Ship Wavecall</name>
+					<script>wdirection = matches[2]
+wdistance = matches[3]
+
+send ("INVOKE WAVECALL "..wdirection.." "..wdistance)</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^wavecall (\w+) (\d+)$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Map On</name>
+					<script>send ("CONFIG MAPSHOW ON")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^mapon$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Map Off</name>
+					<script>send ("CONFIG MAPSHOW OFF")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^mapoff$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>SOS</name>
+					<script>send ("GET TOKEN FROM PACK")
+send ("SHIP RESCUE ME")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^sos$</regex>
+				</Alias>
+				<Alias isActive="yes" isFolder="no">
+					<name>Lower Plank</name>
+					<script>send ("say Lower Plank")</script>
+					<command></command>
+					<packageName></packageName>
+					<regex>^lowerp$</regex>
+				</Alias>
+			</AliasGroup>
+		</AliasGroup>
+	</AliasPackage>
+</MudletPackage>
